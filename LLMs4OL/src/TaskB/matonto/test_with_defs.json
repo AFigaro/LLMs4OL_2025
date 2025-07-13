@@ -1,0 +1,150 @@
+[
+  {
+    "term": "newton",
+    "definition": "The newton (N) is the SI-derived unit of force; one newton accelerates a one-kilogram mass by one metre per second squared."
+  },
+  {
+    "term": "newton meter",
+    "definition": "The newton-metre (N·m) is the SI unit of torque, equal to one newton of force applied at a radius of one metre."
+  },
+  {
+    "term": "newton per meter",
+    "definition": "A newton per metre (N m-1) expresses surface tension or spring stiffness—one newton of force distributed over one metre of length."
+  },
+  {
+    "term": "coulomb per square meter",
+    "definition": "Coulomb per square metre (C m-2) is the SI unit of surface charge density, indicating one coulomb of electric charge spread uniformly over one square metre."
+  },
+  {
+    "term": "m2·m-2",
+    "definition": "The expression m²·m⁻² is dimensionless, representing a ratio of identical area terms that mathematically cancel to unity."
+  },
+  {
+    "term": "mole per cubic meter",
+    "definition": "Mole per cubic metre (mol m-3) is the SI unit of amount-of-substance concentration, denoting one mole of entities in one cubic metre of volume."
+  },
+  {
+    "term": "per ampere",
+    "definition": "The reciprocal ampere (A-1) indicates a quantity divided by electric current and appears in electromagnetic formulas that require normalisation by current."
+  },
+  {
+    "term": "farad",
+    "definition": "The farad (F) is the SI-derived unit of capacitance: a conductor has a capacitance of one farad when one coulomb raises its potential by one volt."
+  },
+  {
+    "term": "dalton",
+    "definition": "The dalton (Da), or unified atomic mass unit, equals one-twelfth the mass of a carbon-12 atom and is used for atomic and molecular masses."
+  },
+  {
+    "term": "second power 4",
+    "definition": "Second to the fourth power (s⁴) is a composite time unit that occurs in higher-order physical integrations and differential equations."
+  },
+  {
+    "term": "per kilogram",
+    "definition": "The reciprocal kilogram (kg-1) denotes a quantity normalised by mass, such as specific activity or attenuation coefficient per unit mass."
+  },
+  {
+    "term": "radian",
+    "definition": "The radian (rad) is the SI unit of plane angle, defined as the angle subtended at a circle’s centre by an arc equal in length to the radius."
+  },
+  {
+    "term": "joule per mole",
+    "definition": "Joule per mole (J mol-1) expresses energy normalised to amount of substance and is common for molar enthalpy and Gibbs energy values."
+  },
+  {
+    "term": "becquerel",
+    "definition": "The becquerel (Bq) is the SI unit of radioactivity, equal to one nuclear disintegration or similar stochastic event per second."
+  },
+  {
+    "term": "byte",
+    "definition": "A byte (B) is a digital information unit consisting of eight bits and typically capable of representing one character in computer systems."
+  },
+  {
+    "term": "coulomb per kilogram",
+    "definition": "Coulomb per kilogram (C kg-1) measures ionising-radiation exposure as electric charge liberated per unit mass of air."
+  },
+  {
+    "term": "ampere per square meter",
+    "definition": "Ampere per square metre (A m-2) is the SI unit of current density, indicating electric current flowing per unit cross-sectional area."
+  },
+  {
+    "term": "unit_kelvin_-1",
+    "definition": "Reciprocal kelvin (K-1) quantifies a property per unit temperature and is used, for example, in thermal expansion coefficients."
+  },
+  {
+    "term": "joule",
+    "definition": "The joule (J) is the SI unit of work, energy and heat; one joule equals one newton-metre or one watt-second."
+  },
+  {
+    "term": "meter squared",
+    "definition": "The square metre (m²) is the SI derived unit of area, equal to the area of a square with one-metre sides."
+  },
+  {
+    "term": "unit_electron_volt",
+    "definition": "An electron volt (eV) is a non-SI energy unit equal to the kinetic energy gained by a single elementary charge when accelerated through a potential difference of one volt (≈1.602 × 10-19 J)."
+  },
+  {
+    "term": "joule per kilogram per kelvin",
+    "definition": "Joule per kilogram per kelvin (J kg-1 K-1) is the SI unit of specific heat capacity, describing energy required to raise the temperature of one kilogram of substance by one kelvin."
+  },
+  {
+    "term": "per steradian",
+    "definition": "Reciprocal steradian (sr-1) is a dimensionless unit used when an intensive quantity is divided by solid angle."
+  },
+  {
+    "term": "second per mole",
+    "definition": "Second per mole (s mol-1) indicates a time interval normalised by amount of substance and is useful in kinetics for average lifetime per mole."
+  },
+  {
+    "term": "coulomb per cubic meter",
+    "definition": "Coulomb per cubic metre (C m-3) expresses volumetric charge density, the electric charge contained in a unit volume."
+  },
+  {
+    "term": "joule per mole per kelvin",
+    "definition": "Joule per mole per kelvin (J mol-1 K-1) is the SI unit for molar entropy or molar heat capacity at constant pressure."
+  },
+  {
+    "term": "lumen",
+    "definition": "The lumen (lm) is the SI unit of luminous flux, defined as one candela-steradian, and measures perceived radiant power."
+  },
+  {
+    "term": "hertz",
+    "definition": "The hertz (Hz) is the SI unit of frequency, equal to one cycle or event per second."
+  },
+  {
+    "term": "watt per meter per kelvin",
+    "definition": "Watt per metre per kelvin (W m-1 K-1) quantifies thermal conductivity—heat flow through a material one metre thick per kelvin temperature gradient."
+  },
+  {
+    "term": "micrometer",
+    "definition": "A micrometre (µm) is a length of one-millionth of a metre, commonly used to express cell sizes and infrared wavelengths."
+  },
+  {
+    "term": "unit_gigapascal",
+    "definition": "The gigapascal (GPa) equals one billion pascals and is widely used to state high pressures and elastic moduli."
+  },
+  {
+    "term": "unit_megapascal",
+    "definition": "The megapascal (MPa) equals one million pascals and is typically used for material strength and hydraulic pressures."
+  },
+  {
+    "term": "reciprocal second",
+    "definition": "Reciprocal second (s-1) is a dimensionless unit for rates and frequencies, numerically identical to the hertz."
+  },
+  {
+    "term": "fahrenheit",
+    "definition": "The degree Fahrenheit (°F) is a temperature scale where water freezes at 32 °F and boils at 212 °F under standard conditions."
+  },
+  {
+    "term": "tesla",
+    "definition": "The tesla (T) is the SI unit of magnetic flux density, defined as one weber per square metre."
+  },
+  {
+    "term": "watt",
+    "definition": "The watt (W) is the SI unit of power, equivalent to one joule per second."
+  },
+  {
+    "term": "gray per second",
+    "definition": "Gray per second (Gy s-1) expresses absorbed dose rate—the amount of ionising-radiation energy deposited per unit mass each second."
+  }
+]
