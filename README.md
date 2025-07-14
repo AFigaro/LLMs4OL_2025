@@ -37,7 +37,7 @@ LLMs4OL_2025/
 │
 ├── LICENSE            # Apache-2.0
 └── README.md
-<\code>
+</code>
 
 ### 🔑 Script Cheat-Sheet
 
