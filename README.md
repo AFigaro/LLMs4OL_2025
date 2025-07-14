@@ -6,6 +6,7 @@ This repository contains the **IRIS team** solution for the **LLMs4OL 2025 Chall
 All task-specific code lives under `LLMs4OL/src/`, organised by sub-task (B, C, D) and ontology
 (MatOnto, OBI, SWEET).
 
+<code>
 LLMs4OL_2025/
 ├── LLMs4OL/
 │   └── src/
@@ -36,7 +37,7 @@ LLMs4OL_2025/
 │
 ├── LICENSE            # Apache-2.0
 └── README.md
-
+<\code>
 
 ### 🔑 Script Cheat-Sheet
 
