@@ -43,15 +43,12 @@ LLMs4OL_2025/
 
 | Script | What it does | Output |
 |--------|--------------|--------|
-| **augment_data_\*** | Augments training terms with unit symbols, plural/-case variants, Wiktionary & GPT-4o ≤3-word synonyms (all cached). | `train_augmented.jsonl` |
-| **collect_\*term_defs.py** | Mines compact English definitions (LLM + heuristics) for each ontology type. | `*_term_definitions.json` |
-| **train_inference_\*_configurable.py** | End-to-end pipeline<br>▪ build stratified splits → tokenize → train BERT/DeBERTa multi-label classifier<br>▪ dev-set threshold sweep to maximise micro-F1<br>▪ writes submission JSON. | model checkpoints, `preds_*.json` |
+| **augment_data_\*** | Augments training terms with unit symbols, plural/-case variants, Wiktionary & GPT-4o generated synonyms. | `train_augmented.jsonl` |
+| **collect_\*term_defs.py** | Mines short English definitions for each ontology type. | `*_term_definitions.json` |
+| **train_inference_\*_configurable.py** (Task B) | End-to-end pipeline<br>▪ build stratified splits → tokenize → train DeBERTa multi-label classifier<br>▪ dev-set threshold sweep to maximise micro-F1-score<br>▪ writes submission JSON. | model checkpoints, `preds_*.json` |
 | **filter_candidates_\*** | Embeds candidate pairs in SBERT + FAISS IP index, prunes to top-K semantic matches. | `candidates_*.json` |
 | **\*train_and_infer_configurable.py** (Task C/D) | Fine-tunes a classification/ranking model on filtered candidates; ties into same threshold-sweep logic for predictions. | model checkpoints, submission JSON |
 
 > **Note:** Raw LLMs4OL 2025 datasets are **not** committed. Place the original task folders under `LLMs4OL/2025/` before running any script.
 
 ---
-
-Feel free to tell me if you want a longer, tutorial-style README (installation, GPU requirements, run commands, citation) or a diagram of the end-to-end pipeline—happy to flesh it out!
-::contentReference[oaicite:0]{index=0}
