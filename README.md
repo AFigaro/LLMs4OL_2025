@@ -8,33 +8,33 @@ All task-specific code lives under `LLMs4OL/src/`, organised by sub-task (B, C, 
 
 LLMs4OL_2025/
 ├── LLMs4OL/
-│ └── src/
-│ ├── TaskB/ # Term-typing (multi-label classification)
-│ │ ├── matonto/
-│ │ │ ├─ augment_data_matonto.py # ⇢ generates surface-form variants & caches synonyms
-│ │ │ ├─ collect_matonto_term_defs.py # ⇢ scrapes/generates short type definitions
-│ │ │ ├─ train_inference_matonto_configurable.py
-│ │ │ │ • toggles data-augmentation / definitions
-│ │ │ │ • trains BERT/DeBERTa + threshold tuning (micro-F1)
-│ │ │ └─ *term_definitions.json / train_augmented.jsonl
-│ │ ├── obi/ …same trio of scripts/resources for OBI
-│ │ └── sweet/ …same trio + train_deberta_sweet_cls.py
-│ │
-│ ├── TaskC/ # Taxonomy discovery (parent–child edges)
-│ │ ├── matonto/
-│ │ │ ├─ fetch_matonto_defs.py # gathers extra definitions
-│ │ │ ├─ filter_candidates_matonto.py # FAISS + SBERT semantic filtering
-│ │ │ └─ matonto_train_and_infer_configurable.py
-│ │ ├── obi/ …analogous scripts
-│ │ └── sweet/ …analogous scripts
-│ │
-│ └── TaskD/
-│ └── sweet/ # Non-taxonomic relation extraction
-│ ├─ build_sweetD_candidates_semantic_only.py
-│ ├─ sweet_RE_train_and_infer_configurable.py
-│ └─ candidates_sweetD{train,test}.json
+│   └── src/
+│       ├── TaskB/                      # Term-typing (multi-label classification)
+│       │   ├── matonto/
+│       │   │   ├── augment_data_matonto.py           # surface-form variants & synonym cache
+│       │   │   ├── collect_matonto_term_defs.py      # scrape / generate type definitions
+│       │   │   ├── train_inference_matonto_configurable.py
+│       │   │   │   ├── toggles data-augmentation / definitions
+│       │   │   │   └── trains BERT/DeBERTa + threshold tuning (micro-F1)
+│       │   │   └── *term_definitions.json  /  train_augmented.jsonl
+│       │   ├── obi/                     # same trio for OBI
+│       │   └── sweet/                   # same trio + train_deberta_sweet_cls.py
+│       │
+│       ├── TaskC/                      # Taxonomy discovery (parent–child edges)
+│       │   ├── matonto/
+│       │   │   ├── fetch_matonto_defs.py            # gather extra definitions
+│       │   │   ├── filter_candidates_matonto.py     # FAISS + SBERT semantic filtering
+│       │   │   └── matonto_train_and_infer_configurable.py
+│       │   ├── obi/                     # analogous scripts
+│       │   └── sweet/                   # analogous scripts
+│       │
+│       └── TaskD/
+│           └── sweet/                   # Non-taxonomic relation extraction
+│               ├── build_sweetD_candidates_semantic_only.py
+│               ├── sweet_RE_train_and_infer_configurable.py
+│               └── candidates_sweetD_{train,test}.json
 │
-├── LICENSE (Apache-2.0)
+├── LICENSE            # Apache-2.0
 └── README.md
 
 
