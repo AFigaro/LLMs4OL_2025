@@ -1,13 +1,11 @@
-This is IRIS team solution for LLMs4OL 2025 Challenge. This is an initial commit which is missing requirements (to be added soon) 
-
 ## 📁 Repository Layout & Key Scripts
 
 This repository contains the **IRIS team** solution for the **LLMs4OL 2025 Challenge**.  
 All task-specific code lives under `LLMs4OL/src/`, organised by sub-task (B, C, D) and ontology
 (MatOnto, OBI, SWEET).
 
-<code>
-LLMs4OL_2025/
+
+<code> LLMs4OL_2025/
 ├── LLMs4OL/
 │   └── src/
 │       ├── TaskB/                      # Term-typing (multi-label classification)
@@ -50,4 +48,6 @@ LLMs4OL_2025/
 
 > **Note:** Raw LLMs4OL 2025 datasets are **not** committed. Place the original task folders under `LLMs4OL/2025/` before running any script.
 
+## Disclaimer
+This is an initial commit which is missing requirements file (to be added soon) 
 ---
