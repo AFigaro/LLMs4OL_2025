@@ -14,9 +14,7 @@ LLMs4OL_2025/
 │       │   ├── matonto/
 │       │   │   ├── augment_data_matonto.py           # surface-form variants & synonym cache
 │       │   │   ├── collect_matonto_term_defs.py      # scrape / generate type definitions
-│       │   │   ├── train_inference_matonto_configurable.py
-│       │   │   │   ├── toggles data-augmentation / definitions
-│       │   │   │   └── trains BERT/DeBERTa + threshold tuning (micro-F1)
+│       │   │   ├── train_inference_matonto_configurable.py     # trains on training data and makes predictions on test
 │       │   │   └── *term_definitions.json  /  train_augmented.jsonl
 │       │   ├── obi/                     # same trio for OBI
 │       │   └── sweet/                   # same trio + train_deberta_sweet_cls.py
@@ -25,7 +23,7 @@ LLMs4OL_2025/
 │       │   ├── matonto/
 │       │   │   ├── fetch_matonto_defs.py            # gather extra definitions
 │       │   │   ├── filter_candidates_matonto.py     # FAISS + SBERT semantic filtering
-│       │   │   └── matonto_train_and_infer_configurable.py
+│       │   │   └── matonto_train_and_infer_configurable.py    # trains on training data and makes predictions on test
 │       │   ├── obi/                     # analogous scripts
 │       │   └── sweet/                   # analogous scripts
 │       │
@@ -41,13 +39,14 @@ LLMs4OL_2025/
 
 ### 🔑 Script Cheat-Sheet
 
-| Script | What it does | Output |
-|--------|--------------|--------|
-| **augment_data_\*** | Augments training terms with unit symbols, plural/-case variants, Wiktionary & GPT-4o generated synonyms. | `train_augmented.jsonl` |
-| **collect_\*term_defs.py** | Mines short English definitions for each ontology type. | `*_term_definitions.json` |
-| **train_inference_\*_configurable.py** (Task B) | End-to-end pipeline<br>▪ build stratified splits → tokenize → train DeBERTa multi-label classifier<br>▪ dev-set threshold sweep to maximise micro-F1-score<br>▪ writes submission JSON. | model checkpoints, `preds_*.json` |
-| **filter_candidates_\*** | Embeds candidate pairs in SBERT + FAISS IP index, prunes to top-K semantic matches. | `candidates_*.json` |
-| **\*train_and_infer_configurable.py** (Task C/D) | Fine-tunes a classification/ranking model on filtered candidates; ties into same threshold-sweep logic for predictions. | model checkpoints, submission JSON |
+| Script | Subtask(s) | What it does | Output |
+|--------|------------|--------------|--------|
+| **augment_data_\*** | B | Augments training terms with unit symbols, plural/case variants, plus Wiktionary & GPT-4o-generated synonyms. | `train_augmented.jsonl` |
+| **collect_\*term/type_defs.py** | B / C / D | Mines short English definitions for each ontology term/type. | `*_term_definitions.json` |
+| **train_inference_\*_configurable.py** | B | End-to-end pipeline that trains a DeBERTa multi-label classifier and writes predictions to a submission file. | model checkpoints, `preds_*.json` |
+| **filter_candidates_\*** | C & D | Embeds candidate pairs with SBERT + FAISS, then prunes to the top-K semantic matches. | `candidates_*.json` |
+| **\*train_and_infer_configurable.py** | C & D | Fine-tunes a classification/ranking model on filtered candidates; includes threshold-sweep logic for predictions. | model checkpoints, submission JSON |
+
 
 > **Note:** Raw LLMs4OL 2025 datasets are **not** committed. Place the original task folders under `LLMs4OL/2025/` before running any script.
 
