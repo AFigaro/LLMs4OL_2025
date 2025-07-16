@@ -38,15 +38,15 @@ All task-specific code lives under `LLMs4OL/src/`, organised by sub-task (B, C, 
 ## Installation
 
 ```bash
-# clone repository
+# 1. Clone the repo
 git clone https://github.com/AFigaro/LLMs4OL_2025.git
 cd LLMs4OL_2025
 
-# (recommended) create virtual environment
-python3 -m venv llms4ol
-source llms4ol/bin/activate
+# 2. Create + activate a Python 3.10.12 conda env
+conda create -n llms4ol python=3.10.12 -y
+conda activate llms4ol
 
-# install project dependencies
+# 3. Install project dependencies
 pip install -r requirements.txt
 ```
 
