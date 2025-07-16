@@ -48,6 +48,7 @@ source llms4ol/bin/activate
 
 # install project dependencies
 pip install -r requirements.txt
+```
 
 ## 🔑 Script Cheat-Sheet
 
