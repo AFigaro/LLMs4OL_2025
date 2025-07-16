@@ -63,6 +63,3 @@ pip install -r requirements.txt
 
 > **Note:** Raw LLMs4OL 2025 datasets are **not** committed. Place the original task folders under `LLMs4OL/2025/` before running any script.
 
-## Disclaimer
-This is an initial commit which is missing requirements file (to be added soon) 
----
