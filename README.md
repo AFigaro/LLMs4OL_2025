@@ -35,7 +35,21 @@ All task-specific code lives under `LLMs4OL/src/`, organised by sub-task (B, C, 
 └── README.md
 </code>
 
-### 🔑 Script Cheat-Sheet
+## Installation
+
+```bash
+# clone repository
+git clone https://github.com/AFigaro/LLMs4OL_2025.git
+cd LLMs4OL_2025
+
+# (recommended) create virtual environment
+python3 -m venv llms4ol
+source llms4ol/bin/activate
+
+# install project dependencies
+pip install -r requirements.txt
+
+## 🔑 Script Cheat-Sheet
 
 | Script | Subtask(s) | What it does | Output |
 |--------|------------|--------------|--------|
